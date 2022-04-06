@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './style/mockdata.css';
 class Mockdata extends Component {
   constructor(props) {
     super(props);
@@ -12,9 +12,9 @@ class Mockdata extends Component {
           Dien_tich: 'wasif@email.com',
           Danh_gia: ' ★★★',
           Lien_he: '0128197463',
-          // Thoi_gian: '30/05/2022',
-          Image:
-            'https://th.bing.com/th/id/R.6a5f839c8fc960a17eb99a79d3eae340?rik=0o%2f8f3VkViplyw&riu=http%3a%2f%2fwww.mahermouhajer.com%2fwp-content%2fuploads%2f2018%2f11%2f1772-.jpg&ehk=k85T6XKmMa70Tv2RE5nORCb43FoWhqrMJjfpbR2FkLM%3d&risl=&pid=ImgRaw&r=0',
+          Thoi_gian: '30/05/2022',
+          // Image:
+          //   'https://th.bing.com/th/id/R.6a5f839c8fc960a17eb99a79d3eae340?rik=0o%2f8f3VkViplyw&riu=http%3a%2f%2fwww.mahermouhajer.com%2fwp-content%2fuploads%2f2018%2f11%2f1772-.jpg&ehk=k85T6XKmMa70Tv2RE5nORCb43FoWhqrMJjfpbR2FkLM%3d&risl=&pid=ImgRaw&r=0',
         },
       ],
       room2: [
@@ -33,10 +33,10 @@ class Mockdata extends Component {
 
   renderTableData() {
     return this.state.room.map((student, index) => {
-      const { id, gia, dia_chi, Dien_tich, Danh_gia, Lien_he, Image } = student;
+      const { id, gia, dia_chi, Dien_tich, Danh_gia, Lien_he, Thoi_gian} = student;
       return (
-        <>
-          <tr key={id}>
+        <table className='tabledata'>
+          <tr  key={id}>
             <td>Giá</td>
             <td>{gia}</td>
           </tr>
@@ -58,9 +58,9 @@ class Mockdata extends Component {
           </tr>
           <tr>
             <td>thời gian</td>
-            <td>{Image}</td>
+            <td>{Thoi_gian}</td>
           </tr>
-        </>
+        </table>
       );
     });
   }
