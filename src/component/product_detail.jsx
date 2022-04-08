@@ -2,21 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './style/index.css';
-import { Layout, Slider } from 'antd';
+
 import Involve from './involve';
 import Mockdata from './mockdata';
 import NoteCmt from './notecmt';
 import Slide from './slider';
 
-const { Header, Footer, Sider, Content } = Layout;
-
-function Product_detail(){
+function Product_detail() {
 
 
-  return(
+  return (
     <div>
-      <Layout style={{ background: 'white' }}>
-        <Header>Header</Header>
+
 
         <p style={{ textAlign: 'center', fontSize: '30px' }}>Cho thuê phòng trọ chung cư có máy lạnh giá rẻ</p>
 
@@ -45,9 +42,8 @@ function Product_detail(){
           </div>
         </div>
 
-        <Footer>Footer</Footer>
-      </Layout>
 
+      
 
     </div>
 
