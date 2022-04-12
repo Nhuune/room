@@ -8,7 +8,7 @@ const { Header, Footer, Content } = Layout;
 function App() {
   return (
     <div className="App">
-      <> <Layout style={{ color: 'blue', background:'white' }}>
+      <> <Layout style={{ color: 'blue' }}>
       <Header className="head">
         <div class='left_head'>
           <h1 style={{ color: 'white', textAlign: 'center', position: "relative", left: 200, paddingLeft: 40, height: 20, fontFamily: "Times New Roman" }}>CHO THUÊ PHÒNG TRỌ</h1>
@@ -17,6 +17,7 @@ function App() {
             <li>Trang chủ</li>
             <li>Giới thiệu</li>
             <li>
+              c
               {/* <Router  path='/Product_detail' element={<Product_detils/>} >
                 
               </Router> */}

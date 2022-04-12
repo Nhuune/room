@@ -28,5 +28,17 @@
     margin: 0;
   }
 
+  /* Css carousel */
+  .ant-carousel .slick-slide {
+    text-align: center;
+    height: auto;
+    line-height: 160px;
+    background: white;
+    overflow: hidden;
+  }
   
+  
+  .ant-carousel .slick-slide h3 {
+    color: rgb(15, 15, 15);
+  }
     

@@ -57,7 +57,7 @@ class Mockdata extends Component {
             <td>{Lien_he}</td>
           </tr>
           <tr>
-            <td>Thời gian</td>
+            <td>thời gian</td>
             <td>{Thoi_gian}</td>
           </tr>
         </table>
